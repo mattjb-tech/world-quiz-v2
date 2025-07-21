@@ -80,7 +80,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100vw;
+    width: 100vw; /*added this for my testing, the rest I just copied straight from .welcome*/
     text-align: center;
     padding: 1.5rem;
     box-sizing: border-box;
