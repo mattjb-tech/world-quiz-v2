@@ -1,0 +1,115 @@
+/*Remember that we're designing for mobiles as the default.*/
+/*Love ya :D*/
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1a1a2e);
+    background-size: 400% 400%;
+    animation: gradientLoop 18s ease infinite;
+    color: #e0f7fa;
+}
+
+@keyframes gradientLoop {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+
+.welcome h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.welcome .discover {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+    color: #b2ebf2;
+}
+
+.welcome .intro {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    color: #b2dfdb;
+}
+
+.welcome .start {
+    background-color: #00796b;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00796b;
+    transition: all 0.3s ease;
+}
+
+.welcome .start:hover {
+    background-color: #004d40;
+    box-shadow: 0 0 10px #00ffc389, 0 0 20px #00ffc389, 0 0 30px #00ffc388;
+}
+
+/*remove and redo this when you start working on the conditions component, this is just for testing.*/
+.conditions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+
+/*This is also just testing code*/
+.conditions p{
+    color: #ffffff
+}
+
+
+@media (min-width: 768px) {
+
+    body {
+        transform: scale(1.25);
+        overflow: hidden;
+    }
+
+    .welcome h1 {
+      font-size: 2.5rem;
+    }
+  
+    .welcome .intro {
+      font-size: 1.1rem;
+      max-width: 600px;
+    }
+  
+    .welcome .start {
+      font-size: 1.1rem;
+      padding: 1rem 2rem;
+    }
+}  
