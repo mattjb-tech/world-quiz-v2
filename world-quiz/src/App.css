@@ -113,8 +113,7 @@ body {
     background-color: #004d40;
     box-shadow: 0 0 10px #00ffc389, 0 0 20px #00ffc389, 0 0 30px #00ffc388;
 }
-
-/*Matt's section ends here*/
+/*Matt's changes end here*/
 
 
 @media (min-width: 768px) {
@@ -138,7 +137,7 @@ body {
       padding: 1rem 2rem;
     }
 
-    /*Matt's section starts here*/
+    /*Matt's changes start here*/
     .conditionsForm fieldset {
         flex-direction: row;
     }
@@ -147,6 +146,6 @@ body {
         padding-left: 0.75rem;
         padding-right: 0.75rem;
     }
-    /*Matt's section ends here*/
+    /*Matt's changes end here*/
 
 }  
