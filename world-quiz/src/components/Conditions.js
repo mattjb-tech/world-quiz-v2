@@ -32,7 +32,7 @@ function Conditions({data, updateData, onStart}){
                 <fieldset>
                     <legend>What's your target region?</legend>
                     {regionList.map(({value, labelName}) => (
-                        <label key={value}>
+                        <label key={value} className="conditionsFormLabel">
                             <input 
                             type="radio"
                             name="region"
