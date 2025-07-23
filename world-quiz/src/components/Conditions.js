@@ -19,7 +19,7 @@ function Conditions({data, updateData, onStart}){
     const regionList = [
     { value: "all", labelName: "All Regions" },
     { value: "Europe", labelName: "Europe" },
-    { value: "Americas", labelName: "North and South America" },
+    { value: "Americas", labelName: "North & South America" },
     { value: "Asia", labelName: "Asia" }, //have to figure out how to include Oceania here.
     { value: "Africa", labelName: "Africa"}
   ];

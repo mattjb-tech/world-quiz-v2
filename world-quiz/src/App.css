@@ -138,4 +138,15 @@ body {
       padding: 1rem 2rem;
     }
 
+    /*Matt's section starts here*/
+    .conditionsForm fieldset {
+        flex-direction: row;
+    }
+
+    .conditionsFormLabel {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+    /*Matt's section ends here*/
+
 }  
