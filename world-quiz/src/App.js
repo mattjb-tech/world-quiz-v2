@@ -13,9 +13,9 @@ function App() {
   const setConditions = () => setStep('conditions')
 
 // Because we're using React, our data has to start at the top level if we need multiple components to use it.
-// Then, we can send it to individual components as a prop later.
+// Then, we can pass it to individual components as a prop later.
 
-  const [conditionList, setConditionList] = useState({  //the conditions the user picks for the quiz are an example of this
+  const [conditionList, setConditionList] = useState({ 
     region: 'all',
     question_count: 10
   });

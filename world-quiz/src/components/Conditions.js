@@ -1,22 +1,48 @@
 import React, { useState } from 'react';
 
-// Let me do this part <3 
+// Almost finished this part, but not quite <3
 
-function Conditions({conditions, updateConditions}){
+function Conditions({data, updateData}){
     const handleChange = (e) => {
         const {name , value } = e.target;
-
-        updateConditions({
-            ...conditions,
+        console.log(`Handling a change. Setting ${name} to ${value}`)
+        try{ updateData({
+            ...data,
             [name]: value
-        })
+        }) } catch (error){
+            console.log(`Error updating the data.`)
+        }
+
     }
 
-
+    const regionList = [
+    { value: "all", labelName: "All Regions" },
+    { value: "Europe", labelName: "Europe" },
+    { value: "Americas", labelName: "North and South America" },
+    { value: "Asia", labelName: "Asia" }, //have to figure out how to include Oceania here.
+    { value: "Africa", labelName: "Africa"}
+  ];
     return (
         <div className='conditions'>
+            
+            <form className='conditionsForm'>
+                <h1>Quiz Conditions</h1>
 
-            <p className='conditionsTest'>You clicked the start button, and this should appear.</p>
+                <fieldset>
+                    <legend>What's your target region?</legend>
+                    {regionList.map(({value, labelName}) => (
+                        <label key={value}>
+                            <input 
+                            type="radio"
+                            name="region"
+                            value={value}
+                            checked={data.region === value}
+                            onChange={handleChange}/>
+                        {labelName}</label>
+                    ))}
+                </fieldset>
+
+            </form>
 
         </div>
     )
