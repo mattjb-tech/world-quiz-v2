@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 
 // Almost finished this part, but not quite <3
+// We have to add the part where they choose the number of questions, and then add more formatting.
 
-function Conditions({data, updateData}){
+function Conditions({data, updateData, onStart}){
     const handleChange = (e) => {
         const {name , value } = e.target;
         console.log(`Handling a change. Setting ${name} to ${value}`)
@@ -43,6 +44,10 @@ function Conditions({data, updateData}){
                 </fieldset>
 
             </form>
+
+        <button onClick={onStart} className="start">
+          Let's Go!
+        </button>
 
         </div>
     )
