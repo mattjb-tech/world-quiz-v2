@@ -5,22 +5,19 @@ import Conditions from './components/Conditions'
 import QuestionCard from './components/QuestionCard'
 import Results from './components/Results'
 
-//Updated to include the Conditions component. For now, it doesn't have an 'onStart'
-// but we can add that later on when the component is closer to finished.
+//Updated to add in the Conditions component <3
 
 function App() {
   const [step, setStep] = useState('welcome')
   const setConditions = () => setStep('conditions')
-  const setQuestionCard = () => setStep('questionCard')
+  const setQuiz = () => setStep('quiz')
 
-// Because we're using React, our data has to start at the top level if we need multiple components to use it.
-// Then, we can pass it to individual components as a prop later.
-// This part is for the test conditions (2nd component)
+// Data for the quiz conditions
   const [conditionList, setConditionList] = useState({ 
     region: 'all',
     question_count: 10
   });
-// I'll pass it to the Conditions component below:
+// I'll pass it to the Conditions component as a prop below
 
   return (
     <div className='app'>
@@ -29,7 +26,7 @@ function App() {
       {step === 'conditions' && <Conditions 
                                   data={conditionList} 
                                   updateData={setConditionList} 
-                                  onStart={setQuestionCard}/>
+                                  onStart={setQuiz}/>
       } 
     </div>
   );

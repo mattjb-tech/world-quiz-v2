@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 // We have to add the part where they choose the number of questions, and then add more formatting.
 
 function Conditions({data, updateData, onStart}){
+    
     const handleChange = (e) => {
         const {name , value } = e.target;
         console.log(`Handling a change. Setting ${name} to ${value}`)
