@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 
-// Almost finished this part, but not quite <3
-// We have to add the part where they choose the number of questions, and then add more formatting.
+// <3 This part should be done, but feel free to review
 
 function Conditions({data, updateData, onStart}){
     
     const handleChange = (e) => {
         const {name , value } = e.target;
-        console.log(`Handling a change. Setting ${name} to ${value}`)
+
+        const valueFixed = name === 'question_count' ? Number(value) : value //changes string to an int
+
+        console.log(`Handling a change. Setting ${name} to ${valueFixed}`)
         try{ updateData({
             ...data,
-            [name]: value
+            [name]: valueFixed
         }) } catch (error){
             console.log(`Error updating the data.`)
         }
@@ -24,6 +26,10 @@ function Conditions({data, updateData, onStart}){
     { value: "Asia", labelName: "Asia" }, //have to figure out how to include Oceania here.
     { value: "Africa", labelName: "Africa"}
   ];
+
+    const questionCount = [5, 10, 15, 20] //Feel free to change these numbers
+                                          //But 10 needs to be an option, bc that's the default.
+
     return (
         <div className='conditions'>
             
@@ -33,7 +39,7 @@ function Conditions({data, updateData, onStart}){
                 <fieldset>
                     <legend>What's your target region?</legend>
                     {regionList.map(({value, labelName}) => (
-                        <label key={value} className="conditionsFormLabel">
+                        <label key={value} className="conditionsFormLabel region">
                             <input 
                             type="radio"
                             name="region"
@@ -41,6 +47,20 @@ function Conditions({data, updateData, onStart}){
                             checked={data.region === value}
                             onChange={handleChange}/>
                         {labelName}</label>
+                    ))}
+                </fieldset>
+
+                <fieldset>
+                    <legend>How many questions?</legend>
+                    {questionCount.map((num) => (
+                        <label key={num} className="conditionsFormLabel questionCount">
+                            <input 
+                            type="radio"
+                            name="question_count"
+                            value={num}
+                            checked={data.question_count === num}
+                            onChange={handleChange}/>
+                        {num}</label>
                     ))}
                 </fieldset>
 
