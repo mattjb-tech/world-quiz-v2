@@ -23,11 +23,16 @@ function App() {
     <div className='app'>
       {step === 'welcome' && <WelcomeScreen onStart={setConditions} />} {/*if step = welcome, onstart lets us set the conditions, else it does nothing*/}
       
-      {step === 'conditions' && <Conditions 
-                                  data={conditionList} 
-                                  updateData={setConditionList} 
-                                  onStart={setQuiz}/>
-      } 
+      {step === 'conditions' && (
+        <div className="wrapper">
+          <Conditions 
+            data={conditionList} 
+            updateData={setConditionList} 
+            onStart={setQuiz}
+          />
+        </div>
+      )}
+
     </div>
   );
 }

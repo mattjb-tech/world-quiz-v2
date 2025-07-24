@@ -1,6 +1,13 @@
 /*Remember that we're designing for mobiles as the default.*/
 /*Love ya :D*/
 
+
+
+
+/*tell me what do u think of the new settings look, i hope you like it
+im really really really sorry i changed what u did, i just thought this would look better.
+btw idk how to make that settings border u did lol*/
+
 body {
     margin: 0;
     padding: 0;
@@ -73,53 +80,81 @@ body {
     box-shadow: 0 0 10px #00ffc389, 0 0 20px #00ffc389, 0 0 30px #00ffc388;
 }
 
-/*Matt's section starts here*/
-.conditions{
+/*Matt's and zayn's section starts here*/
+
+.wrapper {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    text-align: center;
-    padding: 1.5rem;
+    min-height: 100vh;
+    padding: 1rem;
     box-sizing: border-box;
 }
 
-.conditionsForm{
+.conditions.new {
+    max-width: 400px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(8px);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    color: #e0f7fa;
+  }
+  
+  .title {
+    text-align: center;
     margin-bottom: 2rem;
-}
-
-.conditionsForm fieldset{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.3rem;
-}
-
-.conditions .start {
-    background-color: #00796b;
+    font-size: 1.8rem;
     color: #ffffff;
-    padding: 0.75rem 1.5rem;
+  }
+  
+  .field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  
+  .field label {
+    margin-bottom: 0.5rem;
     font-size: 1rem;
-    font-weight: bold;
+  }
+  
+  select, input[type="range"] {
+    padding: 0.6rem;
     border: none;
-    border-radius: 25px;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: #e0f2f1;
+    color: #004d40;
+  }
+  
+  input[type="range"] {
+    accent-color: #00796b;
+  }
+  
+  .go {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #00796b;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 0 10px #00796b;
-    transition: all 0.3s ease;
-}
-
-.conditions .start:hover {
+    transition: background-color 0.3s ease;
+  }
+  
+  .go:hover {
     background-color: #004d40;
-    box-shadow: 0 0 10px #00ffc389, 0 0 20px #00ffc389, 0 0 30px #00ffc388;
-}
-/*Matt's changes end here*/
-
+  }  
+/*Matt's and zayn's changes end here*/
 
 @media (min-width: 768px) {
 
     body {
-        transform: scale(1.25);
+        transform: scale(1.15);
         overflow: hidden;
     }
 
@@ -137,15 +172,7 @@ body {
       padding: 1rem 2rem;
     }
 
-    /*Matt's changes start here*/
-    .conditionsForm fieldset {
-        flex-direction: row;
-    }
-
-    .conditionsFormLabel {
-        padding-left: 0.75rem;
-        padding-right: 0.75rem;
-    }
-    /*Matt's changes end here*/
+    /*Matt's changes startED here. 😁*/
+    /*Matt's changes endED here, love yaaa*/
 
 }  
