@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 // <3 This part should be done, but feel free to review
 
 function Conditions({data, updateData, onStart}){
