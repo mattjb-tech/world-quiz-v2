@@ -42,8 +42,9 @@ function Conditions({ data, updateData, onStart }) {
         <input
           type="range"
           name="question_count"
-          min="5"
+          min="10"
           max="30"
+          step="2"
           value={data.question_count}
           onChange={handleChange}
         />
