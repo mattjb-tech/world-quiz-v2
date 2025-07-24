@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className='app'>
-      {step === 'welcome' && <WelcomeScreen onStart={setConditions} />} {/*if step = welcome, onstart lets us set the conditions, else it does nothing*/}
+      {step === 'welcome' && <WelcomeScreen onStart={setConditions} />}
       
       {step === 'conditions' && (
         <div className="wrapper">
