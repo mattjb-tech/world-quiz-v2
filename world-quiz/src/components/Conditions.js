@@ -12,7 +12,8 @@ function Conditions({ data, updateData, onStart }) {
     { value: "Americas", label: "Americas" },
     { value: "Asia", label: "Asia" },
     { value: "Africa", label: "Africa" },
-    { value: "Oceania", label: "Oceania" } // austrailia isnt in asia. sorry 😘 
+    { value: "Oceania", label: "Oceania" } // austrailia isnt in asia. sorry 😘
+                                            // actually it is. check the json 😘😘
   ];
 
   return (
@@ -57,6 +58,5 @@ function Conditions({ data, updateData, onStart }) {
   );
 }
 
-// i thought a drop down might look better than radio buttons too, what do u think? looks a bit cleaner this way
 
 export default Conditions;
