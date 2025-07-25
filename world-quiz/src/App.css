@@ -95,40 +95,40 @@ body {
     border-radius: 16px;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     color: #e0f7fa;
-  }
+}
   
-  .title {
+.title {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 1.8rem;
     color: #ffffff;
-  }
+}
   
-  .field {
+.field {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.5rem;
-  }
+}
   
-  .field label {
+.field label {
     margin-bottom: 0.5rem;
     font-size: 1rem;
-  }
+}
   
-  select, input[type="range"] {
+select, input[type="range"] {
     padding: 0.6rem;
     border: none;
     border-radius: 10px;
     font-size: 1rem;
     background: #e0f2f1;
     color: #004d40;
-  }
+}
   
-  input[type="range"] {
+input[type="range"] {
     accent-color: #00796b;
-  }
+}
   
-  .go {
+.go {
     width: 100%;
     padding: 0.8rem;
     background-color: #00796b;
@@ -139,11 +139,77 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
+}
   
-  .go:hover {
+.go:hover {
     background-color: #004d40;
-  }  
+}
+
+/*question card css starts right here*/
+
+.question-card {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    background: #ffffff0d;
+    backdrop-filter: blur(8px);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 0 20px #00000033;
+    color: #e0f7fa;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    animation: fadeIn 0.6s ease;
+}
+
+.question-card h2 {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #ffffff; /*altho its the same as white, i think it looks boujee*/
+}
+
+.question-card input[type="text"] {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    background-color: #e0f2f1;
+    color: #004d40;
+}
+
+.question-card input[type="text"]::placeholder {
+    color: #00796b99;
+}
+
+.question-card button {
+    background-color: #00796b;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0.75rem 1.2rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.question-card button:hover {
+    background-color: #004d40;
+    box-shadow: 0 0 10px #00ffc388;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /*Matt's and zayn's changes end here*/
 
 @media (min-width: 768px) {
