@@ -2,966 +2,1159 @@
   {
     "name": "Afghanistan",
     "capital": "Kabul",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "Angola",
     "capital": "Luanda",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "medium"
   },
   {
     "name": "Albania",
     "capital": "Tirana",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "medium"
   },
   {
     "name": "Andorra",
     "capital": "Andorra la Vella",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "hard"
   },
   {
     "name": "United Arab Emirates",
     "capital": "Abu Dhabi",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "Argentina",
     "capital": "Buenos Aires",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "medium"
   },
   {
     "name": "Armenia",
     "capital": "Yerevan",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "hard"
   },
   {
     "name": "Antigua and Barbuda",
     "capital": "Saint John's",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "hard"
   },
   {
     "name": "Australia",
     "capital": "Canberra",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "easy"
   },
   {
     "name": "Austria",
     "capital": "Vienna",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "easy"
   },
   {
     "name": "Azerbaijan",
     "capital": "Baku",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "hard"
   },
   {
     "name": "Burundi",
     "capital": "Gitega",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Belgium",
     "capital": "Brussels",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "easy"
   },
   {
     "name": "Benin",
     "capital": "Porto-Novo",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Burkina Faso",
     "capital": "Ouagadougou",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Bangladesh",
     "capital": "Dhaka",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "Bulgaria",
     "capital": "Sofia",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "medium"
   },
   {
     "name": "Bahrain",
     "capital": "Manama",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "Bahamas",
     "capital": "Nassau",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "medium"
   },
   {
     "name": "Bosnia and Herzegovina",
     "capital": "Sarajevo",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "hard"
   },
   {
     "name": "Belarus",
     "capital": "Minsk",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "medium"
   },
   {
     "name": "Belize",
     "capital": "Belmopan",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "hard"
   },
   {
     "name": "Bolivia",
     "capital": "Sucre",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "hard"
   },
   {
     "name": "Brazil",
     "capital": "Brasília",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "medium"
   },
   {
     "name": "Barbados",
     "capital": "Bridgetown",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "hard"
   },
   {
     "name": "Brunei",
     "capital": "Bandar Seri Begawan",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "hard"
   },
   {
     "name": "Bhutan",
     "capital": "Thimphu",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "hard"
   },
   {
     "name": "Botswana",
     "capital": "Gaborone",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Central African Republic",
     "capital": "Bangui",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Canada",
     "capital": "Ottawa",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "easy"
   },
   {
     "name": "Switzerland",
     "capital": "Bern",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "easy"
   },
   {
     "name": "Chile",
     "capital": "Santiago",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "medium"
   },
   {
     "name": "China",
     "capital": "Beijing",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "easy"
   },
   {
     "name": "Ivory Coast",
     "capital": "Yamoussoukro",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Cameroon",
     "capital": "Yaoundé",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "DR Congo",
     "capital": "Kinshasa",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Congo",
     "capital": "Brazzaville",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Colombia",
     "capital": "Bogotá",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "hard"
   },
   {
     "name": "Comoros",
     "capital": "Moroni",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Cape Verde",
     "capital": "Praia",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "medium"
   },
   {
     "name": "Costa Rica",
     "capital": "San José",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "hard"
   },
   {
     "name": "Cuba",
     "capital": "Havana",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "medium"
   },
   {
     "name": "Cyprus",
     "capital": "Nicosia",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "medium"
   },
   {
     "name": "Czechia",
     "capital": "Prague",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "easy"
   },
   {
     "name": "Germany",
     "capital": "Berlin",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "easy"
   },
   {
     "name": "Djibouti",
     "capital": "Djibouti",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Dominica",
     "capital": "Roseau",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "hard"
   },
   {
     "name": "Denmark",
     "capital": "Copenhagen",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "medium"
   },
   {
     "name": "Dominican Republic",
     "capital": "Santo Domingo",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "medium"
   },
   {
     "name": "Algeria",
     "capital": "Algiers",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "medium"
   },
   {
     "name": "Ecuador",
     "capital": "Quito",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "medium"
   },
   {
     "name": "Egypt",
     "capital": "Cairo",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "easy"
   },
   {
     "name": "Eritrea",
     "capital": "Asmara",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Spain",
     "capital": "Madrid",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "easy"
   },
   {
     "name": "Estonia",
     "capital": "Tallinn",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "hard"
   },
   {
     "name": "Ethiopia",
     "capital": "Addis Ababa",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Finland",
     "capital": "Helsinki",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "medium"
   },
   {
     "name": "Fiji",
     "capital": "Suva",
-    "region": "Oceania"
+    "region": "Oceania",
+    "difficulty": "medium"
   },
   {
     "name": "France",
     "capital": "Paris",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "easy"
   },
   {
     "name": "Micronesia",
     "capital": "Palikir",
-    "region": "Oceania"
+    "region": "Oceania",
+    "difficulty": "hard"
   },
   {
     "name": "Gabon",
     "capital": "Libreville",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "United Kingdom",
     "capital": "London",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "easy"
   },
   {
     "name": "Georgia",
     "capital": "Tbilisi",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "hard"
   },
   {
     "name": "Ghana",
     "capital": "Accra",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "medium"
   },
   {
     "name": "Guinea",
     "capital": "Conakry",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Gambia",
     "capital": "Banjul",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "medium"
   },
   {
     "name": "Guinea-Bissau",
     "capital": "Bissau",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Equatorial Guinea",
     "capital": "Malabo",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Greece",
     "capital": "Athens",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "easy"
   },
   {
     "name": "Grenada",
     "capital": "St. George's",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "hard"
   },
   {
     "name": "Guatemala",
     "capital": "Guatemala City",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "medium"
   },
   {
     "name": "Guyana",
     "capital": "Georgetown",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "medium"
   },
   {
     "name": "Honduras",
     "capital": "Tegucigalpa",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "hard"
   },
   {
     "name": "Croatia",
     "capital": "Zagreb",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "hard"
   },
   {
     "name": "Haiti",
     "capital": "Port-au-Prince",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "hard"
   },
   {
     "name": "Hungary",
     "capital": "Budapest",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "medium"
   },
   {
     "name": "Indonesia",
     "capital": "Jakarta",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "India",
     "capital": "New Delhi",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "easy"
   },
   {
     "name": "Ireland",
     "capital": "Dublin",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "easy"
   },
   {
     "name": "Iran",
     "capital": "Tehran",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "Iraq",
     "capital": "Baghdad",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "Iceland",
     "capital": "Reykjavik",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "hard"
   },
   {
     "name": "Israel",
     "capital": "Jerusalem",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "Italy",
     "capital": "Rome",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "easy"
   },
   {
     "name": "Jamaica",
     "capital": "Kingston",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "medium"
   },
   {
     "name": "Jordan",
     "capital": "Amman",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "Japan",
     "capital": "Tokyo",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "easy"
   },
   {
     "name": "Kazakhstan",
     "capital": "Astana",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "Kenya",
     "capital": "Nairobi",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "medium"
   },
   {
     "name": "Kyrgyzstan",
     "capital": "Bishkek",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "hard"
   },
   {
     "name": "Cambodia",
     "capital": "Phnom Penh",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "hard"
   },
   {
     "name": "Kiribati",
     "capital": "South Tarawa",
-    "region": "Oceania"
+    "region": "Oceania",
+    "difficulty": "hard"
   },
   {
     "name": "Saint Kitts and Nevis",
     "capital": "Basseterre",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "hard"
   },
   {
     "name": "South Korea",
     "capital": "Seoul",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "easy"
   },
   {
     "name": "Kuwait",
     "capital": "Kuwait City",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "Laos",
     "capital": "Vientiane",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "hard"
   },
   {
     "name": "Lebanon",
     "capital": "Beirut",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "Liberia",
     "capital": "Monrovia",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Libya",
     "capital": "Tripoli",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "medium"
   },
   {
     "name": "Saint Lucia",
     "capital": "Castries",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "hard"
   },
   {
     "name": "Liechtenstein",
     "capital": "Vaduz",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "hard"
   },
   {
     "name": "Sri Lanka",
     "capital": "Colombo",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "Lesotho",
     "capital": "Maseru",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Lithuania",
     "capital": "Vilnius",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "hard"
   },
   {
     "name": "Luxembourg",
     "capital": "Luxembourg",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "medium"
   },
   {
     "name": "Latvia",
     "capital": "Riga",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "medium"
   },
   {
     "name": "Morocco",
     "capital": "Rabat",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "medium"
   },
   {
     "name": "Monaco",
     "capital": "Monaco",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "hard"
   },
   {
     "name": "Moldova",
     "capital": "Chișinău",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "hard"
   },
   {
     "name": "Madagascar",
     "capital": "Antananarivo",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Maldives",
     "capital": "Malé",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "hard"
   },
   {
     "name": "Mexico",
     "capital": "Mexico City",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "easy"
   },
   {
     "name": "Marshall Islands",
     "capital": "Majuro",
-    "region": "Oceania"
+    "region": "Oceania",
+    "difficulty": "hard"
   },
   {
     "name": "North Macedonia",
     "capital": "Skopje",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "hard"
   },
   {
     "name": "Mali",
     "capital": "Bamako",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "medium"
   },
   {
     "name": "Malta",
     "capital": "Valletta",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "hard"
   },
   {
     "name": "Myanmar",
     "capital": "Naypyidaw",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "hard"
   },
   {
     "name": "Montenegro",
     "capital": "Podgorica",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "hard"
   },
   {
     "name": "Mongolia",
     "capital": "Ulan Bator",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "hard"
   },
   {
     "name": "Mozambique",
     "capital": "Maputo",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Mauritania",
     "capital": "Nouakchott",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Mauritius",
     "capital": "Port Louis",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "medium"
   },
   {
     "name": "Malawi",
     "capital": "Lilongwe",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Malaysia",
     "capital": "Kuala Lumpur",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "Namibia",
     "capital": "Windhoek",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Niger",
     "capital": "Niamey",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Nigeria",
     "capital": "Abuja",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "medium"
   },
   {
     "name": "Nicaragua",
     "capital": "Managua",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "hard"
   },
   {
     "name": "Netherlands",
     "capital": "Amsterdam",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "easy"
   },
   {
     "name": "Norway",
     "capital": "Oslo",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "easy"
   },
   {
     "name": "Nepal",
     "capital": "Kathmandu",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "hard"
   },
   {
     "name": "Nauru",
     "capital": "Yaren",
-    "region": "Oceania"
+    "region": "Oceania",
+    "difficulty": "hard"
   },
   {
     "name": "New Zealand",
     "capital": "Wellington",
-    "region": "Oceania"
+    "region": "Oceania",
+    "difficulty": "medium"
   },
   {
     "name": "Oman",
     "capital": "Muscat",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "Pakistan",
     "capital": "Islamabad",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "Panama",
     "capital": "Panama City",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "medium"
   },
   {
     "name": "Peru",
     "capital": "Lima",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "easy"
   },
   {
     "name": "Philippines",
     "capital": "Manila",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "Palau",
     "capital": "Ngerulmud",
-    "region": "Oceania"
+    "region": "Oceania",
+    "difficulty": "hard"
   },
   {
     "name": "Papua New Guinea",
     "capital": "Port Moresby",
-    "region": "Oceania"
+    "region": "Oceania",
+    "difficulty": "hard"
   },
   {
     "name": "Poland",
     "capital": "Warsaw",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "easy"
   },
   {
     "name": "North Korea",
     "capital": "Pyongyang",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "Portugal",
     "capital": "Lisbon",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "easy"
   },
   {
     "name": "Paraguay",
     "capital": "Asunción",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "hard"
   },
   {
     "name": "Qatar",
     "capital": "Doha",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "Romania",
     "capital": "Bucharest",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "medium"
   },
   {
     "name": "Russia",
     "capital": "Moscow",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "easy"
   },
   {
     "name": "Rwanda",
     "capital": "Kigali",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Saudi Arabia",
     "capital": "Riyadh",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "Sudan",
     "capital": "Khartoum",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "medium"
   },
   {
     "name": "Senegal",
     "capital": "Dakar",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "medium"
   },
   {
     "name": "Singapore",
     "capital": "Singapore",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "easy"
   },
   {
     "name": "Solomon Islands",
     "capital": "Honiara",
-    "region": "Oceania"
+    "region": "Oceania",
+    "difficulty": "hard"
   },
   {
     "name": "Sierra Leone",
     "capital": "Freetown",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "El Salvador",
     "capital": "San Salvador",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "medium"
   },
   {
     "name": "San Marino",
     "capital": "City of San Marino",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "hard"
   },
   {
     "name": "Somalia",
     "capital": "Mogadishu",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Serbia",
     "capital": "Belgrade",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "medium"
   },
   {
     "name": "South Sudan",
     "capital": "Juba",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "São Tomé and Príncipe",
     "capital": "São Tomé",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Suriname",
     "capital": "Paramaribo",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "hard"
   },
   {
     "name": "Slovakia",
     "capital": "Bratislava",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "hard"
   },
   {
     "name": "Slovenia",
     "capital": "Ljubljana",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "hard"
   },
   {
     "name": "Sweden",
     "capital": "Stockholm",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "medium"
   },
   {
     "name": "Eswatini",
     "capital": "Lobamba",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Seychelles",
     "capital": "Victoria",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "medium"
   },
   {
     "name": "Syria",
     "capital": "Damascus",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "Chad",
     "capital": "N'Djamena",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Togo",
     "capital": "Lomé",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Thailand",
     "capital": "Bangkok",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "easy"
   },
   {
     "name": "Tajikistan",
     "capital": "Dushanbe",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "hard"
   },
   {
     "name": "Turkmenistan",
     "capital": "Ashgabat",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "hard"
   },
   {
     "name": "Timor-Leste",
     "capital": "Dili",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "hard"
   },
   {
     "name": "Tonga",
     "capital": "Nuku'alofa",
-    "region": "Oceania"
+    "region": "Oceania",
+    "difficulty": "hard"
   },
   {
     "name": "Trinidad and Tobago",
     "capital": "Port of Spain",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "hard"
   },
   {
     "name": "Tunisia",
     "capital": "Tunis",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "medium"
   },
   {
     "name": "Türkiye",
     "capital": "Ankara",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "Tuvalu",
     "capital": "Funafuti",
-    "region": "Oceania"
+    "region": "Oceania",
+    "difficulty": "hard"
   },
   {
     "name": "Tanzania",
     "capital": "Dodoma",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Uganda",
     "capital": "Kampala",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "medium"
   },
   {
     "name": "Ukraine",
     "capital": "Kyiv",
-    "region": "Europe"
+    "region": "Europe",
+    "difficulty": "medium"
   },
   {
     "name": "Uruguay",
     "capital": "Montevideo",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "hard"
   },
   {
     "name": "United States",
     "capital": "Washington D.C.",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "easy"
   },
   {
     "name": "Uzbekistan",
     "capital": "Tashkent",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "hard"
   },
   {
     "name": "Saint Vincent and the Grenadines",
     "capital": "Kingstown",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "hard"
   },
   {
     "name": "Venezuela",
     "capital": "Caracas",
-    "region": "Americas"
+    "region": "Americas",
+    "difficulty": "medium"
   },
   {
     "name": "Vietnam",
     "capital": "Hanoi",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "medium"
   },
   {
     "name": "Vanuatu",
     "capital": "Port Vila",
-    "region": "Oceania"
+    "region": "Oceania",
+    "difficulty": "hard"
   },
   {
     "name": "Samoa",
     "capital": "Apia",
-    "region": "Oceania"
+    "region": "Oceania",
+    "difficulty": "hard"
   },
   {
     "name": "Yemen",
     "capital": "Sana'a",
-    "region": "Asia"
+    "region": "Asia",
+    "difficulty": "hard"
   },
   {
     "name": "South Africa",
     "capital": "Pretoria",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "medium"
   },
   {
     "name": "Zambia",
     "capital": "Lusaka",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   },
   {
     "name": "Zimbabwe",
     "capital": "Harare",
-    "region": "Africa"
+    "region": "Africa",
+    "difficulty": "hard"
   }
 ]
