@@ -115,18 +115,68 @@ body {
     font-size: 1rem;
 }
   
-select, input[type="range"] {
-    padding: 0.6rem;
-    border: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    background: #e0f2f1;
-    color: #004d40;
+select {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #e0f2f1;
+  color: #004d40;
 }
-  
+
+
+/*The next few sections below are just for the slider.*/
 input[type="range"] {
-    accent-color: #00796b;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #004d40;
+  
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background: transparent;
+  width: 100%;
+  accent-color: #00796b;
 }
+
+/* Track - WebKit */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  background: #ccc;
+  border-radius: 2px;
+}
+
+/* Track - Firefox */
+input[type="range"]::-moz-range-track {
+  height: 4px;
+  background: #ccc;
+  border-radius: 2px;
+}
+
+/* Thumb - WebKit */
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 24px;
+  background:  #00796b;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+/* Thumb - Firefox */
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 24px;
+  background:  #00796b;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*Fin*/
   
 .go {
     width: 100%;
