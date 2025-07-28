@@ -1,34 +1,64 @@
-import React, {useState} from "react"
+import React, { useState, useEffect } from "react"
 import countries from '../data/info.json'
 
-function QuestionCard({question, onNext}){
-    const [userAnswer, setUserAnswer] = useState('')
+function QuestionCard({ question, onNext, onBack, userAnswer, currentIndex, isLastQuestion }) {
+  const [userInput, setUserInput] = useState(userAnswer || "") //holds the users current input for this question
 
-    const handleNext = () => {
-        onNext(userAnswer.trim())
-        setUserAnswer('')
-    }
+  useEffect(() => { //every time the userAnswer prop changes (like when going back), update the input field
+    setUserInput(userAnswer || "")
+  }, [userAnswer])
 
-    const handleKeyDown = (e) => { //so we can just type enter instead of using the mouse
-        if (e.key === 'Enter') handleNext()
-    }
+  const handleNext = () => { //handles the next btn
+    onNext(userInput.trim()) //seends input back
+    setUserInput("") //resets input for next question
+  }
 
-    return (
-        <div className="question-card">
-            <h2>What's the capital of <span className="highlight">{question.name}</span>?</h2>
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") handleNext();
+  }
 
-            <input type="text" value={userAnswer}
-            onChange={(e) => setUserAnswer(e.target.value)}
-            onKeyDown={handleKeyDown} placeholder="Type your answer here..."
-            className="answer-input" autoFocus />
+  const handleSkip = () => {
+    onNext("")
+    setUserInput("")
+  }
 
-            <div className="buttons"> {/*my idea is to add a skip and a go back buttons*/}
-                <button onClick={handleNext} disabled={userAnswer.trim()===''} className="next-btn">
-                    Next
-                </button>
-            </div>
-        </div>
-    )
+  return (
+    <div className="question-card">
+      <h2>
+        What's the capital of <span className="highlight">{question.name}</span>?
+      </h2>
+
+      <input
+        type="text"
+        value={userInput}
+        onChange={(e) => setUserInput(e.target.value)}
+        onKeyDown={handleKeyDown}
+        placeholder="Type your answer here..."
+        className="answer-input"
+        autoFocus
+      />
+
+      <div className="buttons">
+        <button
+          onClick={onBack}
+          className="back-btn"
+          disabled={currentIndex === 0}>
+          Back
+        </button>
+
+        <button onClick={handleSkip} className="skip-btn" disabled={isLastQuestion}>
+          Skip
+        </button>
+
+        <button
+          onClick={handleNext}
+          disabled={userInput.trim() === ""}
+          className="next-btn">
+          Next
+        </button>
+      </div>
+    </div>
+  )
 }
 
-export default QuestionCard
+export default QuestionCard;
