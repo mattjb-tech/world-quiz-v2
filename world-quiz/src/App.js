@@ -1,69 +1,109 @@
-import React, { useState } from 'react';
-import './App.css';
+import React, { useState } from 'react'
+import './App.css'
 import WelcomeScreen from './components/WelcomeScreen'
 import Conditions from './components/Conditions'
 import QuestionCard from './components/QuestionCard'
 import countries from './data/info.json'
 import Results from './components/Results'
 
-//Updated to add in the Conditions component <3
-
 function App() {
-  const [step, setStep] = useState('welcome')
+  const [step, setStep] = useState('welcome') //storing the steps
 
-  const setConditions = () => setStep('conditions')
-  const setQuiz = () => setStep('quiz')
+  const setConditions = () => setStep('conditions') //moving to conditions
 
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [userAnswers, setUserAnswers] = useState([])
+  const startQuiz = () => { //shuffles the filtered questions before starting the quiz
+    const shuffled = shuffleArray(filteredQuestions).slice(0, conditionList.question_count)
+    setQuizQuestions(shuffled)
+    setStep('quiz')
+  }
 
-// Data for the quiz conditions
-  const [conditionList, setConditionList] = useState({ 
+  const [currentIndex, setCurrentIndex] = useState(0) //storing question index
+  const [userAnswers, setUserAnswers] = useState([]) //storing users answers
+
+  const [conditionList, setConditionList] = useState({ //initial valyues for conditions
     region: 'all',
+    difficulty: 'all',
     question_count: 10
-  });
-// I'll pass it to the Conditions component as a prop below
+  })
 
+  const [quizQuestions, setQuizQuestions] = useState([]) //stores the quiz questions bc if i dont the results wont make sense lol trust me
 
-// here ill see which region does the user want
-  const filteredQuestions = conditionList.region === 'all' ? countries : countries.filter((q) => q.region === conditionList.region)
+  const filteredQuestions = //applies the settings
+    conditionList.region === 'all'
+      ? countries
+      : countries
+          .filter((q) => q.region === conditionList.region)
+          .filter((q) =>
+            conditionList.difficulty === 'all' ? true : q.difficulty === conditionList.difficulty
+          )
 
-  const selectedQuestions = filteredQuestions.slice(0, conditionList.question_count) //im not really sure about this
+  const shuffleArray = (array) => { //just shuffles the original set of countries
+    return [...array].sort(() => Math.random() - 0.5)
+  }
 
-  const handleNext = (answer) => {
-    setUserAnswers([...userAnswers, answer])
-    const nextIndex = currentIndex + 1
-    if (nextIndex < selectedQuestions.length) {
+  const handleNext = (answer) => { //stores each answer
+    setUserAnswers((prev) => {  //ta;es the previous state and add new answer to it
+      const newAnswers = [...prev]
+      newAnswers[currentIndex] = answer //adds the new answers
+      return newAnswers
+    })
+
+    const nextIndex = currentIndex + 1 //i dont need to explain this lol
+    if (nextIndex < quizQuestions.length) {
       setCurrentIndex(nextIndex)
     } else setStep('results')
+  }
+
+  const handleBack = () => { //back button
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+  }
+
+  const restartQuiz = () => { //restart quiz
+    setUserAnswers([])
+    setCurrentIndex(0)
+    setStep('welcome')
   }
 
   return (
     <div className='app'>
       {step === 'welcome' && <WelcomeScreen onStart={setConditions} />}
-      
+
       {step === 'conditions' && (
         <div className="wrapper">
-          <Conditions 
-            data={conditionList} 
-            updateData={setConditionList} 
-            onStart={setQuiz}
+          <Conditions
+            data={conditionList}
+            updateData={setConditionList}
+            onStart={startQuiz}
           />
         </div>
       )}
 
-      {step === 'quiz' && selectedQuestions.length > 0 && (
-        <div className='wrapper'>
-          <QuestionCard question={selectedQuestions[currentIndex]}
-          onNext={handleNext}
+      {step === 'quiz' && quizQuestions.length > 0 && (
+        <div className="wrapper">
+          <QuestionCard
+            question={quizQuestions[currentIndex]}
+            onNext={handleNext}
+            onBack={handleBack}
+            userAnswer={userAnswers[currentIndex] || ''}
+            currentIndex={currentIndex}
+            isLastQuestion={currentIndex === filteredQuestions.length -1}
           />
         </div>
       )}
 
-      {step === 'results' && <Results answers={userAnswers} questions={selectedQuestions} />}
-
+      {step === 'results' && (
+        <div className="wrapper">
+          <Results
+            answers={userAnswers}
+            questions={quizQuestions}
+            onRestart={restartQuiz}
+          />
+        </div>
+      )}
     </div>
   );
 }
 
-export default App;
+export default App
