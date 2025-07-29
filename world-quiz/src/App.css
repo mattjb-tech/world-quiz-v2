@@ -116,14 +116,21 @@ body {
 }
   
 select {
-  padding: 0.6rem;
-  border: none;
-  border-radius: 10px;
-  font-size: 1rem;
-  background: #e0f2f1;
-  color: #004d40;
+    padding: 0.8rem;
+    border: 1px solid #00796b;
+    border-radius: 12px;
+    font-size: 1rem;
+    background: rgba(224, 242, 241, 0.9);
+    color: #004d40;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+select:focus {
+    outline: none;
+    border-color: #00bfa5;
+    box-shadow: 0 0 0 2px rgba(0, 191, 165, 0.3);
+}
 
 /*The next few sections below are just for the slider.*/
 /*Firefox uses a slightly different slider, so needs its own sections*/
@@ -250,6 +257,81 @@ input[type="range"]::-moz-range-thumb {
     background-color: #004d40;
     box-shadow: 0 0 10px #00ffc388;
 }
+
+.question-card .buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.question-card .back-btn {
+  flex: 1;
+  background-color: #546e7a;
+  color: #e0f7fa;
+  font-weight: bold;
+  padding: 0.75rem 1.2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.question-card .back-btn:hover {
+  background-color: #37474f;
+  box-shadow: 0 0 10px #00ffc388;
+}
+
+.question-card .back-btn:disabled {
+  background-color: #2c3e50;
+  cursor: not-allowed;
+  box-shadow: none;
+  color: #777;
+}
+
+.question-card .skip-btn {
+  flex: 1;
+  background-color: #ff7043;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.75rem 1.2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.question-card .skip-btn:hover {
+  background-color: #e64a19;
+  box-shadow: 0 0 10px #ff7043aa;
+}
+
+.question-card .next-btn {
+  flex: 1;
+  background-color: #00796b;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0.75rem 1.2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.question-card .next-btn:hover {
+  background-color: #004d40;
+  box-shadow: 0 0 10px #00ffc388;
+}
+
+.question-card .next-btn:disabled {
+  background-color: #004d40;
+  cursor: not-allowed;
+  box-shadow: none;
+  color: #7fccc1;
+}
+
 
 @keyframes fadeIn {
     from {
