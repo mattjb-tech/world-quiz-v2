@@ -115,15 +115,6 @@ body {
     font-size: 1rem;
 }
   
-select, input[type="range"] {
-    padding: 0.6rem;
-    border: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    background: #e0f2f1;
-    color: #004d40;
-}
-
 select {
     padding: 0.8rem;
     border: 1px solid #00796b;
@@ -140,10 +131,61 @@ select:focus {
     border-color: #00bfa5;
     box-shadow: 0 0 0 2px rgba(0, 191, 165, 0.3);
 }
-  
+
+/*The next few sections below are just for the slider.*/
+/*Firefox uses a slightly different slider, so needs its own sections*/
+
 input[type="range"] {
-    accent-color: #00796b;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #004d40;
+  
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background: transparent;
+  width: 100%;
+  accent-color: #00796b;
 }
+
+/* Track - WebKit */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  background: #ccc;
+  border-radius: 2px;
+}
+
+/* Track - Firefox */
+input[type="range"]::-moz-range-track {
+  height: 4px;
+  background: #ccc;
+  border-radius: 2px;
+}
+
+/* Thumb - WebKit */
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 24px;
+  background:  #00796b;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+/* Thumb - Firefox */
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 24px;
+  background:  #00796b;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*Fin*/
   
 .go {
     width: 100%;
