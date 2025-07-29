@@ -126,6 +126,8 @@ select {
 
 
 /*The next few sections below are just for the slider.*/
+/*Firefox uses a slightly different slider, so needs its own sections*/
+
 input[type="range"] {
   padding: 0.6rem;
   border: none;
