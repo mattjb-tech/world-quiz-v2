@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react"
-import countries from '../data/info.json'
 
 function QuestionCard({ question, onNext, onBack, userAnswer, currentIndex, isLastQuestion }) {
   const [userInput, setUserInput] = useState(userAnswer || "") //holds the users current input for this question
@@ -9,7 +8,7 @@ function QuestionCard({ question, onNext, onBack, userAnswer, currentIndex, isLa
   }, [userAnswer])
 
   const handleNext = () => { //handles the next btn
-    onNext(userInput.trim()) //seends input back
+    onNext(userInput.trim()) //sends input back
     setUserInput("") //resets input for next question
   }
 
@@ -31,6 +30,7 @@ function QuestionCard({ question, onNext, onBack, userAnswer, currentIndex, isLa
       <input
         type="text"
         value={userInput}
+        maxLength={30}
         onChange={(e) => setUserInput(e.target.value)}
         onKeyDown={handleKeyDown}
         placeholder="Type your answer here..."

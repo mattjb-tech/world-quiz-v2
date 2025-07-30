@@ -12,8 +12,8 @@ function Conditions({ data, updateData, onStart }) {
     { value: "Americas", label: "Americas" },
     { value: "Asia", label: "Asia" },
     { value: "Africa", label: "Africa" },
-    { value: "Oceania", label: "Oceania" } // austrailia isnt in asia. sorry 😘
-                                            // actually it is. check the json 😘😘
+    { value: "Oceania", label: "Oceania" } 
+                                            
   ]
 
   return (

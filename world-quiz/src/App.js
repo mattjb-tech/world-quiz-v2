@@ -20,7 +20,7 @@ function App() {
   const [currentIndex, setCurrentIndex] = useState(0) //storing question index
   const [userAnswers, setUserAnswers] = useState([]) //storing users answers
 
-  const [conditionList, setConditionList] = useState({ //initial valyues for conditions
+  const [conditionList, setConditionList] = useState({ //initial values for conditions
     region: 'all',
     difficulty: 'all',
     question_count: 10
@@ -42,7 +42,7 @@ function App() {
   }
 
   const handleNext = (answer) => { //stores each answer
-    setUserAnswers((prev) => {  //ta;es the previous state and add new answer to it
+    setUserAnswers((prev) => {  //takes the previous state and add new answer to it
       const newAnswers = [...prev]
       newAnswers[currentIndex] = answer //adds the new answers
       return newAnswers
