@@ -22,21 +22,23 @@ function Results({answers, questions, onRestart}){
 
             <div className='container'>
               {results.map((result, index) => (
-                <div key={index} className={result.Correct === '✅' ? 'correct' : 'incorrect'}>
+                <div key={index} className={`resultgrid ${result.Correct === '✅' ? 'correct' : 'incorrect'}`}>
                   {/*Each correct answer has className 'correct'*/}
                   {/*Each wrong answer has className 'incorrect'*/}
-                  <p className='questionbox'>What is the capital of {result.Country}?</p>
+                  <p className='questionbox'>{result.Country}</p>
                   <p className='answerbox'>
-                    Answer: {result.Capital} <br />
+                    Capital: {result.Capital} <br />
                     You said: {result.Answer} {result.Correct}
                   </p>
                 </div>
               ))}
+
+              <button onClick={onRestart} className="restart">
+                  New Quiz
+              </button>
             </div>
 
-            <button onClick={onRestart} className="restart">
-                New Quiz
-            </button>
+
         </div>
     )
 }

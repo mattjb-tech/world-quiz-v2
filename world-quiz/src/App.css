@@ -328,6 +328,82 @@ input[type="range"]::-moz-range-thumb {
   color: #7fccc1;
 }
 
+/*Results CSS starts here*/
+
+.scroll-wrapper {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 3rem 1rem;
+  box-sizing: border-box;
+}
+
+.results {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+
+  border: 0.3rem solid rgb(93, 99, 95);
+  border-radius: 12px;
+  background-color: #0f2027;
+  text-align: center;
+
+  margin: 0.75rem; 
+  padding-bottom: 1rem;
+  padding-top: 0.75rem;
+  box-sizing: border-box; 
+}
+
+.resultgrid{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.3rem;
+  padding: 0 1rem;
+  height: 12vh; /*Needs fixing*/
+}
+
+.questionbox{
+  flex: 1;
+  border: 0.1rem solid black;
+  background-color: silver;
+  border-radius: 4%;
+}
+
+.answerbox{
+  flex: 1;
+  border: 0.1rem solid black;
+  border-radius: 4%;
+  font-size: 0.75rem;
+}
+
+.correct .answerbox{
+  background-color:#8de4b4;
+}
+
+.incorrect .answerbox{
+  background-color: rgb(231, 188, 180);
+}
+
+.restart {
+    width: 80%;
+    padding: 0.8rem;
+    background-color: #00796b;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.restart:hover {
+    background-color: #004d40;
+}
 
 @keyframes fadeIn {
     from {

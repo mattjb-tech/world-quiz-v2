@@ -12,7 +12,8 @@ function App() {
   const setConditions = () => setStep('conditions') //moving to conditions
 
   const startQuiz = () => { //shuffles the filtered questions before starting the quiz
-    const shuffled = shuffleArray(filteredQuestions).slice(0, conditionList.question_count)
+    let shuffled = shuffleArray(filteredQuestions).slice(0, conditionList.question_count)
+
     setQuizQuestions(shuffled)
     setStep('quiz')
   }
@@ -28,14 +29,12 @@ function App() {
 
   const [quizQuestions, setQuizQuestions] = useState([]) //stores the quiz questions bc if i dont the results wont make sense lol trust me
 
-  const filteredQuestions = //applies the settings
-    conditionList.region === 'all'
-      ? countries
-      : countries
-          .filter((q) => q.region === conditionList.region)
-          .filter((q) =>
-            conditionList.difficulty === 'all' ? true : q.difficulty === conditionList.difficulty
-          )
+
+  const filterByRegion = countries 
+    .filter(q => conditionList.region === 'all' || q.region === conditionList.region)
+
+  const filteredQuestions = filterByRegion
+    .filter(q => conditionList.difficulty === 'all' || q.difficulty === conditionList.difficulty);
 
   const shuffleArray = (array) => { //just shuffles the original set of countries
     return [...array].sort(() => Math.random() - 0.5)
@@ -95,11 +94,13 @@ function App() {
 
       {step === 'results' && (
         <div className="wrapper">
-          <Results
-            answers={userAnswers}
-            questions={quizQuestions}
-            onRestart={restartQuiz}
-          />
+           <div className="scroll-wrapper">
+            <Results
+              answers={userAnswers}
+              questions={quizQuestions}
+              onRestart={restartQuiz}
+            />
+          </div>
         </div>
       )}
     </div>
