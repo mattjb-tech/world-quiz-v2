@@ -30,10 +30,10 @@ function App() {
   const [quizQuestions, setQuizQuestions] = useState([]) //stores the quiz questions bc if i dont the results wont make sense lol trust me
 
 
-  const filterByRegion = countries 
+  const filterByRegion = countries //filters by region
     .filter(q => conditionList.region === 'all' || q.region === conditionList.region)
 
-  const filteredQuestions = filterByRegion
+  const filteredQuestions = filterByRegion //then filters by difficulty
     .filter(q => conditionList.difficulty === 'all' || q.difficulty === conditionList.difficulty);
 
   const shuffleArray = (array) => { //just shuffles the original set of countries
