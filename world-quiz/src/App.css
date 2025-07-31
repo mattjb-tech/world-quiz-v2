@@ -1,8 +1,6 @@
 /*Remember that we're designing for mobiles as the default.*/
 /*Love ya :D*/
 
-/*Looks great <3*/
-
 body {
     margin: 0;
     padding: 0;
@@ -74,8 +72,6 @@ body {
     background-color: #004d40;
     box-shadow: 0 0 10px #00ffc389, 0 0 20px #00ffc389, 0 0 30px #00ffc388;
 }
-
-/*Matt's and zayn's section starts here*/
 
 .wrapper {
     display: flex;
@@ -343,8 +339,6 @@ input[type="range"]::-moz-range-thumb {
         transform: translateY(0);
     }
 }
-
-/*Matt's and zayn's changes end here*/
 
 @media (min-width: 768px) {
 
