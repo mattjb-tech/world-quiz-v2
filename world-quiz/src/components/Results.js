@@ -1,46 +1,32 @@
-function Results({answers, questions, onRestart}){
-    
-  const results = questions.map(({ name, capital }, index) => {
-    //First, we connect each question to their answer, and figure out if they got it right
-    const answer = answers[index];
-    return {
-      Country: name,
-      Capital: capital,
-      Answer: answer,
-      Correct: answer === capital ? '✅' : '❌'
-    };
-  });
-    //Store it in the console to bug check
-    console.log(results);
-    //Calculate the percentage they got right 
-    const correctCount = results.filter(r => r.Correct === '✅').length;
-    const percentage = (correctCount / results.length) * 100;
+import React from "react";
+
+function Results({answers, questions, onRestart}) {
+    const correctCount = answers.reduce((acc, answer, i) => {
+        if (!answer) return acc;
+        return answer.toLowerCase() === questions[i].capital.toLowerCase() ? acc + 1 : acc;
+    }, 0);
 
     return (
-        <div className='results'>
-            <h3>You scored: {correctCount} / {results.length} = {percentage.toFixed(2)} %</h3>
+        <div className="results-card fade-in">
+            <h1>Your Results</h1>
+            <p>You got <strong>{correctCount}</strong> out of <strong>{questions.length}</strong> correct!</p>
 
-            <div className='container'>
-              {results.map((result, index) => (
-                <div key={index} className={`resultgrid ${result.Correct === '✅' ? 'correct' : 'incorrect'}`}>
-                  {/*Each correct answer has className 'correct'*/}
-                  {/*Each wrong answer has className 'incorrect'*/}
-                  <p className='questionbox'>{result.Country}</p>
-                  <p className='answerbox'>
-                    Capital: {result.Capital} <br />
-                    You said: {result.Answer} {result.Correct}
-                  </p>
-                </div>
-              ))}
+            <ul className="results-list">
+                {questions.map((q, index) => {
+                    const isCorrect = answers[index] && answers[index].toLowerCase() === q.capital.toLowerCase();
+                    return (
+                        <li key={q.name} className={isCorrect ? 'correct' : 'wrong'}>
+                            <strong>{q.name}</strong> - Your answer: <em>{answers[index] || 'Skipped'}</em> | Correct: <em>{q.capital}</em>
+                        </li>
+                    )
+                })}
+            </ul>
 
-              <button onClick={onRestart} className="restart">
-                  New Quiz
-              </button>
-            </div>
-
-
+            <button className="restart-btn" onClick={onRestart}>
+                Try again
+            </button>
         </div>
-    )
+    );
 }
 
-export default Results
+export default Results;
