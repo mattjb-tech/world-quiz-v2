@@ -99,7 +99,7 @@ function App() {
             onBack={handleBack}
             userAnswer={userAnswers[currentIndex] || ''}
             currentIndex={currentIndex}
-            isLastQuestion={currentIndex === filteredQuestions.length -1}
+            isLastQuestion={currentIndex === finalQuestions.length -1}
           />
         </div>
       )}
