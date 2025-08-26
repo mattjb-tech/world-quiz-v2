@@ -12,7 +12,7 @@ function App() {
   const setConditions = () => setStep('conditions') //moving to conditions
 
   const startQuiz = () => { //shuffles the filtered questions before starting the quiz
-    let shuffled = shuffleArray(filteredQuestions).slice(0, conditionList.question_count)
+    let shuffled = finalQuestions
 
     setQuizQuestions(shuffled)
     setStep('quiz')
@@ -36,9 +36,21 @@ function App() {
   const filteredQuestions = filterByRegion //then filters by difficulty
     .filter(q => conditionList.difficulty === 'all' || q.difficulty === conditionList.difficulty);
 
+  const fallback = countries.filter(q => //if there aren't enough questions
+  (conditionList.region === 'all' || q.region === conditionList.region) &&
+  !filteredQuestions.includes(q)
+);
+
   const shuffleArray = (array) => { //just shuffles the original set of countries
     return [...array].sort(() => Math.random() - 0.5)
   }
+
+  const finalQuestions = [
+    ...shuffleArray(filteredQuestions),
+    ...shuffleArray(fallback)
+  ].slice(0, conditionList.question_count);
+
+
 
   const handleNext = (answer) => { //stores each answer
     setUserAnswers((prev) => {  //takes the previous state and add new answer to it
