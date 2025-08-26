@@ -1,9 +1,16 @@
 import React from "react";
 
 function Results({answers, questions, onRestart}) {
+
+    function normalizeString(str) {
+        return (str||"").toLowerCase()
+                  .normalize("NFD")
+                  .replace(/[\u0300-\u036f]/g, "");
+}
+
     const correctCount = answers.reduce((acc, answer, i) => {
         if (!answer) return acc;
-        return answer.toLowerCase() === questions[i].capital.toLowerCase() ? acc + 1 : acc;
+        return normalizeString(answer) === normalizeString(questions[i].capital) ? acc + 1 : acc;
     }, 0);
 
     return (
@@ -13,7 +20,7 @@ function Results({answers, questions, onRestart}) {
 
             <ul className="results-list">
                 {questions.map((q, index) => {
-                    const isCorrect = answers[index] && answers[index].toLowerCase() === q.capital.toLowerCase();
+                    const isCorrect = answers[index] && normalizeString(answers[index]) === normalizeString(q.capital);
                     return (
                         <li key={q.name} className={isCorrect ? 'correct' : 'wrong'}>
                             <strong>{q.name}</strong> - Your answer: <em>{answers[index] || 'Skipped'}</em> | Correct: <em>{q.capital}</em>
