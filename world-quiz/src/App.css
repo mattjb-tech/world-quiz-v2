@@ -402,7 +402,8 @@ input[type="range"]::-moz-range-thumb {
 
     body {
         transform: scale(1.15);
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 
     .welcome h1 {
