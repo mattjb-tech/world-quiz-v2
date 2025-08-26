@@ -330,92 +330,74 @@ input[type="range"]::-moz-range-thumb {
 
 /*Results CSS starts here*/
 
-.scroll-wrapper {
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 1rem 3rem 1rem;
-  box-sizing: border-box;
-}
-
-.results {
-  flex: 1;
-  min-height: 0;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-
-  border: 0.3rem solid rgb(93, 99, 95);
-  border-radius: 12px;
-  background-color: #0f2027;
+.results-card {
+  max-width: 400px;
+  margin: 2rem auto;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(8px);
+  padding: 2rem;
+  border-radius: 16px;
+  color: #e0f7fa;
   text-align: center;
-
-  margin: 0.75rem; 
-  padding-bottom: 1rem;
-  padding-top: 0.75rem;
-  box-sizing: border-box; 
-}
-
-.resultgrid{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 0.3rem;
-  padding: 0 1rem;
-  height: 12vh; /*Needs fixing*/
-}
-
-.questionbox{
-  flex: 1;
-  border: 0.1rem solid black;
-  background-color: silver;
-  border-radius: 4%;
-}
-
-.answerbox{
-  flex: 1;
-  border: 0.1rem solid black;
-  border-radius: 4%;
-  font-size: 0.75rem;
-}
-
-.correct .answerbox{
-  background-color:#8de4b4;
-}
-
-.incorrect .answerbox{
-  background-color: rgb(231, 188, 180);
-}
-
-.restart {
-    width: 80%;
-    padding: 0.8rem;
-    background-color: #00796b;
-    border: none;
-    border-radius: 12px;
-    font-size: 1rem;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
 }
   
-.restart:hover {
-    background-color: #004d40;
+.results-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 2rem;
+  text-align: left;
+  max-height: 300px;
+  overflow-y: auto;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
 }
-
+  
+.results-list li {
+  margin-bottom: 0.8rem;
+  padding: 0.6rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+  
+.results-list li.correct {
+  background-color: rgba(40, 167, 69, 0.2);
+  color: #a5d6a7;
+}
+  
+.results-list li.wrong {
+  background-color: rgba(183, 28, 28, 0.2);
+  color: #ef9a9a;
+}
+  
+.restart-btn {
+  background-color: #00796b;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+  
+.restart-btn:hover {
+  background-color: #004d40;
+  transform: scale(1.05);
+}
+  
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+  opacity: 0;
+}
+  
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(25px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+  }
 }
-
+  
 @media (min-width: 768px) {
 
     body {
